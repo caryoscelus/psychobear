@@ -7,3 +7,9 @@ saves/
 errors.txt
 log.txt
 traceback.txt
+*.zip
+
+# these are distributed separately
+images/
+music/
+videos/
