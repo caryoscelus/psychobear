@@ -29,7 +29,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = '2017.01.08'
 
 
 ## Text that is placed on the game's about screen. To insert a blank line
@@ -182,6 +182,7 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.classify('**/*.zip', None)
 
     ## To archive files, classify them as 'archive'.
 
@@ -193,15 +194,3 @@ init python:
 
     build.documentation('*.html')
     build.documentation('*.txt')
-
-## A Google Play license key is required to download expansion files and perform
-## in-app purchases. It can be found on the "Services & APIs" page of the Google
-## Play developer console.
-
-# define build.google_play_key = "..."
-
-
-## The username and project name associated with an itch.io project, separated
-## by a slash.
-
-# define build.itch_project = "renpytom/test-project"
